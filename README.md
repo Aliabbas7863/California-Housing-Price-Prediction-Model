@@ -104,44 +104,7 @@ Operations performed:
 - Saves best tuned estimator to:
 	- `artifacts/housing_model_tuned.pkl`
 
-## Quick Start
 
-### 1. Clone the repository
-
-```bash
-git clone <your-repo-url>
-cd mathtask
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the full training pipeline
-
-```bash
-python run_pipeline.py
-```
-
-### 4. Launch the Streamlit app
-
-```bash
-streamlit run app.py
-```
-
-## Script Usage
-
-Run each stage independently if needed:
-
-```bash
-python clean_data.py
-python feature_selection.py
-python train_model.py
-python evaluate_model.py
-python tune_model.py
-```
 
 ## Streamlit Application
 
@@ -170,26 +133,6 @@ Optional output from tuning:
 
 - `artifacts/housing_model_tuned.pkl`
 
-## Reproducibility Notes
-
-- The project uses fixed random seeds in key steps (`random_state=42`) to improve reproducibility.
-- Exact metrics may still vary slightly across environments and package versions.
-
-## Documentation and Governance
-
-- Contribution guide: `CONTRIBUTING.md`
-- Code of conduct: `CODE_OF_CONDUCT.md`
-- Additional project guidelines: `GITHUB_GUIDELINES.md`
-- Full report with complete code: `PROJECT_REPORT_WITH_FULL_CODE.md`
-
-## Common Issues
-
-- `FileNotFoundError` for artifacts:
-	- Run `python run_pipeline.py` before evaluation or launching the app.
-- Missing Python packages:
-	- Re-run `pip install -r requirements.txt` in the active environment.
-- Streamlit command not found:
-	- Ensure `streamlit` is installed in the same environment used to run commands.
 
 ## Future Improvements
 
